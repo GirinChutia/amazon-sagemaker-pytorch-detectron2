@@ -20,6 +20,7 @@ Create a SageMaker notebook instance with an EBS volume equal or bigger than 30 
 ```
 service docker stop
 sudo mv /var/lib/docker /home/ec2-user/SageMaker/docker
+# Create a soft link betweek docker and sagemaker folder
 sudo ln -s /home/ec2-user/SageMaker/docker /var/lib/docker
 service docker start
 ```
